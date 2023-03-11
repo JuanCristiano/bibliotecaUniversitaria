@@ -1,0 +1,275 @@
+/*comentar*/  
+/*esta es la fuente*/
+/*@font-face {
+    font-family: "Roboto";
+    src: url(../assets/Roboto-Light.ttf);}*/
+
+    @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arimo', sans-serif;
+}
+/*comienzo maquetacion del header*/
+.cabecera{
+    background-color: #2C3333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;    
+    margin: 0 auto; 
+    border-bottom: 4px solid #A5C9CA;  
+    position: sticky;
+    top:0px;
+    z-index: 10;
+    
+}
+
+.logo{
+    width: 180px;
+    height:auto;
+}
+
+.contenedorNav {
+    width: 50%;
+    height: auto;
+    
+               
+}
+.contenedorNav ul {
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C3333;
+    
+}
+
+.contenedorNav ul li {
+    /*margin: auto;
+    font-size: 2rem;    
+    line-height: 1rem;
+    background-color: #d0fdd7; 
+    text-align: center;
+    padding: 10px 10px;*/
+}
+
+.linkNav { 
+    text-decoration: none;
+    font-size: 1rem; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color:white;
+    /*border-right: 1px solid black;*/   
+    padding: 10px 10px;
+    
+}
+
+.contenedorId {
+    width: 13% ;
+    height: 15vh ;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    line-height: 2rem;
+    padding: 10px 10px;
+    
+}
+
+.contenedorId i {
+    color: #A5C9CA;
+    
+}
+.contenedorId a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color:white;  
+}
+/*termina maquetacion del header*/
+/*comienzo maquetacion del main*/
+.buscador {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(../assets/img/galeria1\ \(4\).jpg);
+    background-size: cover;
+    background-position: center;
+    border-bottom: 4px solid #A5C9CA;
+}
+
+.textoBuscador {
+    color: #fbf7f5;
+    font-size: 1.3rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.textoBuscador h2{
+    padding: 10px 10px;
+}
+
+.textoBuscador p {
+    padding: 10px 10px;
+}
+
+.seccionDeTextos {
+    background-color: #395B64;
+    color: white;
+    width: 100%;
+    height: auto;
+    padding: 50px 50px 30px 50px;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;    
+    border-bottom: 4px solid #A5C9CA;
+}
+.contenedorSeccionDeTextos {
+    width: 100%;
+    height: auto;
+    
+}
+/*PADRE*/
+.novedades {
+    background-color: #395B64;
+    width: 100%;
+    height: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: space-evenly;
+    border-bottom: 4px solid #A5C9CA;
+
+}
+/*HIJOS*/
+.tituloNovedades {
+    background-color: #395B64;
+    color: white;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.seccionNovedades {
+    background-color: #A5C9CA;
+    width: 20%;
+    height: 65vh;
+    border-radius: 5px;
+    box-shadow: -1px 4px 14px 6px rgba(128,128,128,0.52);
+-webkit-box-shadow: -1px 4px 14px 6px rgba(128,128,128,0.52);
+-moz-box-shadow: -1px 4px 14px 6px rgba(128,128,128,0.52);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.9rem;
+    
+}
+.imgNovedades {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    
+}
+
+.seccionNovedades h3 {
+    margin-top: 15px ;
+}
+
+.seccionNovedades p {
+    font-size: 0.9rem;
+    text-align: center;
+    padding: 10px;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;    
+    background-color: #d0fdd7;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px;
+
+}
+.galeria div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: -11px 12px 19px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: -11px 12px 19px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: -11px 12px 19px -1px rgba(0,0,0,0.75);
+}
+.imgGal {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.reglamentoArticulado {
+    background-color: #d0fdd7;
+    text-align: left;
+}
+/*termina maquetacion del main*/
+/*comienza maquetacion del footer*/
+.pieDePagina {
+    background-color: #2C3333;
+    width: 100%;
+    height: 25vh;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.contenedorPie ul li {
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.5rem;
+    color: white;
+}
+
+.contenedorPie h5 {
+    width: auto;
+    height: 20vh;
+    margin-top: 15px;
+    font-size: 0.8rem;
+    color: white;
+}
+
+
+.contenedorPie a {
+    color: white;
+}
+
+.contenedorPie i {
+    width: 50px;
+    padding: 10px;
+    text-decoration: none;
+    
+}
